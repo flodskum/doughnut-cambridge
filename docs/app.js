@@ -220,12 +220,10 @@ document.querySelectorAll('.jurisdiction-btn').forEach(btn => {
 // Keyboard shortcuts
 document.addEventListener('keydown', (e) => {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    if (e.key === '1') loadDoughnut('city_santa_cruz');
-    if (e.key === '2') loadDoughnut('santa_cruz_county');
-    if (e.key === '3') loadDoughnut('watsonville');
+    if (e.key === '1') loadDoughnut('cambridge');
     if (e.key === 'd') toggleTheme();
 });
 
 // Initialize
-loadDoughnut('city_santa_cruz');
+loadDoughnut('cambridge');
 setupClickInterceptor();
